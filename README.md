@@ -206,13 +206,13 @@ To run this project, you will need to add the following environment variables to
 ### Clone the project
 
 ```bash
-  git clone https://github.com/Wachiye/eclectics-jtw-auth.git
-  cd eclectics-jtw-auth
+  git clone https://github.com/Wachiye/eclectics-jwt-auth.git
+  cd eclectics-jwt-auth
 ```
 ### Project Structure
 
 ```graphql
-eclectics-jtw-auth/
+eclectics-jwt-auth/
 ├── config/
 │   ├── app-env.js          # Environment configuration
 │   ├── database.js         # Database configuration
@@ -236,10 +236,16 @@ eclectics-jtw-auth/
 ├── server.js                # Main application entry point
 ```
 ### Setup Environment Variables
-
+Create a new file named `.env` at the root folder of the project
 ```bash
-  git clone https://github.com/Wachiye/eclectics-jwt-auth.git
-  cd eclectics-jtw-auth
+  touch .env
+```
+Copy and update the following content to the `.env` file you just created
+```markline
+DB_URI=mongodb://localhost:27017/eclectric
+JWT_SECRET=noScreteHerE
+JWT_ISSUER=some-api
+JWT_AUDIENCE=some-client
 ```
     
 ### Install Dependencies
