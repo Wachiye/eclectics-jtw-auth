@@ -238,7 +238,7 @@ eclectics-jtw-auth/
 ### Setup Environment Variables
 
 ```bash
-  git clone https://github.com/Wachiye/eclectics-jtw-auth.git
+  git clone https://github.com/Wachiye/eclectics-jwt-auth.git
   cd eclectics-jtw-auth
 ```
     
